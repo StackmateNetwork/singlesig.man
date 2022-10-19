@@ -128,8 +128,9 @@ By not storing a backup locally, your attacker cannot through any amount of forc
 
 Common practice is for an individual to keep one copy of their seed, and share another copy with friends and family. 
 
+## TIPS
 
-### Passphrase Tips
+### Passphrase
 
 We recommend using a section from a book (hashed) as your passphrase. You can then write down the hint as a puzzle to help you remember how to get to it. 
 
