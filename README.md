@@ -21,7 +21,7 @@ We breakdown options into 2 main categories based on Mnemonic Material.
 
 We further add 2 subcategories for Mnemonic Material Format (in addition to standard PlainText):
 
-- Splits
+- Plain
 - Ciphers
 
 Within each category we look at 3 subcategories regarding the backup options. 
@@ -45,6 +45,8 @@ We also consider the following attack vectors:
 
 `Common setup for beginners due to simplicity. Generally not recommended for large funds. `
 
+### Plain vs Ciphers
+This Tier will only use PlainText backups. Encryption is not recommended for this tier as it requires management of an EncryptionKey.
 
 ### Memory Only
 
@@ -82,16 +84,6 @@ Since we consider that Tier 1 will never hold large funds, this backup mechanism
 `Best case for a beginner in this Tier.`
 Common practice is for an individual to keep one copy of their seed, and share another copy with a close family member. 
 
-### Splits
-`Main advantage is protection against Leak of Backup.`
-By dividing your SeedWords into 2 splits, and keeping them in 2 different locations, if one is leaked, your funds are still safe. For example for 12 words, a simple share of 2 would be 6 words each. We do not recommend creating more than 2 shares unless a more advanced technique like Shamir Secret Shares is used.
-`Main disadvantage is Loss of Backup.`
-If only a single set of shares are backed up, if one of the parts are lost/stolen, funds are lost forever. 
-Therefore, if this technique is being used, a minimum of 2-3 sets must be created. Otherwise, opt for more advanced technique like Shamir Secret Sharing which provides greater redundancy as allows more points of failure.
-
-### Ciphers
-Encryption is not recommended for this tier as it requires management of an EncryptionKey.
-
 
 ## TIER 2:  SeedWords + PassPhrase
 `The most flexible and secure single sig setup.`
@@ -100,9 +92,9 @@ A weak and memorable passphrase in all cases is better than no passphrase at all
 
 Read the section on Passphrase Tips and Memory for more help with getting this right!
 
-### Ciphers
+### Plain vs Ciphers
 
-We bring up encryption before other backup mechanisms because we highly recommend using encryption as a norm in this Tier!
+We highly recommend using encryption as a norm in this Tier!
 
 Since users are using a passphrase, the same passphrase can be used as the Encryption Key which will ensure that backups never have to be made in plain text. 
 
