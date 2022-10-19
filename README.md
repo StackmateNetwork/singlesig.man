@@ -1,4 +1,4 @@
-# solo-backup
+# singlesig.man
 
 The document attempts to cover all the possible methods of backing up single sig bitcoin wallets and their associated trade offs.
 
